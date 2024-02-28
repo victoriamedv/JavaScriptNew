@@ -18,5 +18,5 @@
     "prefer-arrow-callback": 0,
     "linebreak-style": 0
   },
-  "extends": ["airbnb"],
+  "extends": ["airbnb"]
 }
