@@ -11,7 +11,7 @@ export const compute = (str1, str2) => {
   let noEqualChars = 0;
   for (let i = 0; i < str1.length; i += 1) {
     if (str1[i] !== str2[i]) {
-      noEqualChars = i;
+      noEqualChars += 1;
     }
   }
 
