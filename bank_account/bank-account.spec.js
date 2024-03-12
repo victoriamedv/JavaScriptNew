@@ -121,4 +121,12 @@ describe('Bank Account', () => {
       account.balance = 100;
     }).toThrow(Error);
   });
+
+  test('changing balance directly throws error', () => {
+    const account = new BankAccount();
+    account.open();
+    expect(() => {
+      account.balance = 200;
+    }).toThrow(Error);
+  });
 });
