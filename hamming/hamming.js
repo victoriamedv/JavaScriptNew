@@ -4,17 +4,16 @@
 //
 
 export const compute = (str1, str2) => {
-  if (str1.length != str2.length) {
+  if (str1.length !== str2.length) {
     throw new Error('strands must be of equal length');
-  } 
+  }
 
   let noEqualChars = 0;
-  for (let i = 0; i < str1.length; i++) {
-    if (str1[i]!=str2[i]) {
-      noEqualChars++;
+  for (let i = 0; i < str1.length; i += 1) {
+    if (str1[i] !== str2[i]) {
+      noEqualChars += 1;
     }
   }
-  
-  return noEqualChars;
 
+  return noEqualChars;
 };
