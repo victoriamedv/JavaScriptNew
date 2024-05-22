@@ -69,6 +69,5 @@ export const decode = (encodedText, numRails) => {
     }
     railIndex += direction;
   }
-  log(decodedText);
   return decodedText;
 };
