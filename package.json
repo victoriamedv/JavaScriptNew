@@ -30,5 +30,8 @@
     "test": "jest ./*",
     "watch": "jest --watch ./*",
     "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^18.3.1"
   }
 }

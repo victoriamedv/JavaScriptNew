@@ -3,8 +3,6 @@
 // convenience to get you started writing code faster.
 //
 
-import { log } from 'console';
-
 export const encode = (text, numRails) => {
   const arrayEncode = [];
   for (let j = 0; j < numRails; j += 1) {
