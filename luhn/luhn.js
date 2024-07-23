@@ -8,8 +8,8 @@ export const valid = (str) => {
     return false;
   }
 
-  const regex = /\D/g; // \D соответствует любому символу, который не является цифрой
-  const existLetters = regex.test(strCard);
+  // const regex = /\D/g; // \D соответствует любому символу, который не является цифрой
+  const existLetters = Number.isNaN(strCard);
   if (existLetters === true) {
     return false;
   }
